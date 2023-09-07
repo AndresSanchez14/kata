@@ -7,29 +7,29 @@ def Chll2_POW_Sorted(array,S):
          #print("El array esta vacio mi amigo")
          return "El array esta vacio mi amigo"
     else:
-        limitesup= str(S) + str(S)
-        print("Limite sup: " + limitesup)
-        resultado =[]
+        limitsup= str(S) + str(S)
+        print("Limite sup: " + limitsup)
+        Result =[]
         for num in array:
             #print("Numero al cuadrado: " + str(num**2))
-            if (num**2<=int(limitesup)):
+            if (num**2<=int(limitsup)):
                   #print("Voy a agregar este numero a mi array: "+ str(num**2))
-                  resultado.append(num**2)  
-                  #print("Mi array va asi: " + str(resultado))
-        sizeR=len(resultado)
-        #print("Tamaño resultado: " + str(sizeR))
+                  Result.append(num**2)  
+                  #print("Mi array va asi: " + str(Result))
+        sizeR=len(Result)
+        #print("Tamaño Result: " + str(sizeR))
         for i in range(sizeR):
             #print("Ciclo Externo: " +  str(i))
             for j in range (0, sizeR-i-1):
                 #print("Ciclo interno: " +  str(j))
-                if(resultado[j] >resultado[j+1]):
-                      #print("Voy a intercarmbiar posiciones de estos valores : " + str(resultado[j]) +" Y este " + str(resultado[j+1]) )
-                      #print(resultado)
-                      resultado[j],resultado[j+1] = resultado[j+1],resultado[j]
-                      #print(resultado)
-        #resultado.sort()
-        #print("Resultado :"+ str(resultado))
-        return resultado
+                if(Result[j] >Result[j+1]):
+                      #print("Voy a intercarmbiar posiciones de estos valores : " + str(Result[j]) +" Y este " + str(Result[j+1]) )
+                      #print(Result)
+                      Result[j],Result[j+1] = Result[j+1],Result[j]
+                      #print(Result)
+        #Result.sort()
+        #print("Result :"+ str(Result))
+        return Result
 
 S = 5
 #array = [1, 2, 3, 5, 6, 8, 9] # 1 , 4 , 9 ,16 
