@@ -1,7 +1,7 @@
 
 def minCambio(arraym):
   arraym.sort()
-  minicambio = 1
+  minicambio = 0
   for moneda in arraym:
       #print("moneda: " + str(moneda))
       if(moneda > minicambio + 1): 
@@ -18,5 +18,6 @@ def minCambio(arraym):
 #arraym= [1,2,4]
 #arraym = [5, 7, 1, 1, 2, 3, 22]
 #arraym = [1, 1, 1, 1, 1]
-arraym = [1, 5, 1, 1, 1, 10, 15, 20, 100]
+#arraym = [1, 5, 1, 1, 1, 10, 15, 20, 100]
+arraym = [2,3,4,5]
 print(minCambio(arraym))
