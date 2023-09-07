@@ -1,31 +1,32 @@
 #https://www.md5hashgenerator.com/
 
 def Challenge1(array,S):
-    resultado = []
+    Result = []
     for num in array:
         string=""
         if(num >= 10):
-            carga= num
-            while carga>0:
-                #print("Carga " + str(carga))
-                digito = carga%10
-                carga= carga // 10
-                if(digito<S):
-                    string =string + str(digito)
+            carry= num
+            while carry>0:
+                #print("Carga " + str(carry))
+                digit = carry%10
+                #print("Digito :" + str(digit))
+                carry= carry // 10
+                if(digit<S):
+                    string =string + str(digit)
                     #print(string)
-            resultado.append((string[::-1]))       
+            Result.append((string[::-1]))       
         elif(num<S):
-            resultado.append(num)
-    #print("Resultado sin orden: " + str(resultado))
-    sizeR= len(resultado)
-    contador= sizeR-1
-    resultadoOr=[]
+            Result.append(num)
+    #print("Result sin orden: " + str(Result))
+    sizeR= len(Result)
+    iterator= sizeR-1
+    resultSort=[]
     for i in range(0,sizeR):
-        resultadoOr.append(resultado[contador])
-        contador-= 1
-    #print("Resultado con orden: " + str(resultadoOr))    
-    #print("Resultado: " + str(list(reversed(resultadoOr))))
-    return resultadoOr
+        resultSort.append(Result[iterator])
+        iterator-= 1
+    #print("Result con orden: " + str(resultSort))    
+    #print("Result: " + str(list(reversed(resultSort))))
+    return resultSort
 
 #19df669cf9bc136b8e5ec0b7f7c983f5 ---> Andres Sanchez
 # mi numero es 1 
