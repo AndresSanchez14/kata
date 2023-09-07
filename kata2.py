@@ -8,7 +8,7 @@ def Chll2_POW_Sorted(array,S):
          return "El array esta vacio mi amigo"
     else:
         limitesup= str(S) + str(S)
-        #print(limitesup)
+        print("Limite sup: " + limitesup)
         resultado =[]
         for num in array:
             #print("Numero al cuadrado: " + str(num**2))
@@ -23,12 +23,15 @@ def Chll2_POW_Sorted(array,S):
             for j in range (0, sizeR-i-1):
                 #print("Ciclo interno: " +  str(j))
                 if(resultado[j] >resultado[j+1]):
+                      #print("Voy a intercarmbiar posiciones de estos valores : " + str(resultado[j]) +" Y este " + str(resultado[j+1]) )
+                      #print(resultado)
                       resultado[j],resultado[j+1] = resultado[j+1],resultado[j]
+                      #print(resultado)
         #resultado.sort()
         #print("Resultado :"+ str(resultado))
         return resultado
 
-S = 1
+S = 5
 #array = [1, 2, 3, 5, 6, 8, 9] # 1 , 4 , 9 ,16 
 #array= [-2, -1]
 #array = [-10, 10]
