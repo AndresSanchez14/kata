@@ -24,12 +24,12 @@ def Challenge1(array,S):
         resultadoOr.append(resultado[contador])
         contador-= 1
     #print("Resultado con orden: " + str(resultadoOr))    
-    #print("Resultado: " + str(list(reversed(resultado))))
-    return resultado
+    #print("Resultado: " + str(list(reversed(resultadoOr))))
+    return resultadoOr
 
 #19df669cf9bc136b8e5ec0b7f7c983f5 ---> Andres Sanchez
 # mi numero es 1 
-S = 1
+S = 5
 array = [60, 6, 5, 4, 3, 2, 7, 7, 29, 1]
 #array = [1,2,3,4,10707982388,6,7,8]
 #array=[10, 20, 30, 40]
