@@ -1,17 +1,17 @@
 
 def minCambio(arraym):
   arraym.sort()
-  minicambio = 0
-  for moneda in arraym:
+  minchange = 0
+  for coin in arraym:
       #print("moneda: " + str(moneda))
-      if(moneda > minicambio + 1): 
+      if(coin > minchange + 1): 
           
-          #print("Cambio minimo :" + str(minicambio))
+          #print("Cambio minimo :" + str(minchange))
           break
-      minicambio+=moneda   
-      #print("El cambio minimo es de momento es : " + str(minicambio))
+      minchange+=coin   
+      #print("El cambio minimo es de momento es : " + str(minchange))
 
-  return "El cambio minimo que no puedo dar es: " + str(minicambio +1) 
+  return "El cambio minimo que no puedo dar es: " + str(minchange +1) 
 
 
 
